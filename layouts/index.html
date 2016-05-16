@@ -1,0 +1,6 @@
+{{ range .Site.Pages }}
+
+    {{ if and ( eq .Title "index") ( eq .Section "de")}}
+        {{ .Render "index"}}
+    {{ end }}  
+{{ end}}

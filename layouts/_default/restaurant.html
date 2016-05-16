@@ -1,0 +1,147 @@
+{{ partial "header.html" . }}
+
+ <!-- SUB BANNER -->
+    <section class="sub-banner text-center section">
+        <div class="awe-parallax bg-4"></div>
+        <div class="awe-title awe-title-1">
+            <h3 class="lg text-uppercase">Restaurant</h3>
+        </div> 
+    </section>
+    <!-- END / SUB BANNER -->
+
+    <!-- ABOUT STORY -->
+    <section id="about-story" class="about-story section">
+        <div class="divider divider-2"></div>
+        <div class="container">
+
+            <div class="block-first">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="image-wrap">
+                            <img src="/images/restaurant/07_felsenegg-fondue.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 col-md-offset-1">
+                        <h4 class="lg text-uppercase">{{ .Params.restaurant_heading1 }}</h4>
+                        <p>{{ .Params.restaurant_content1 }}</p>
+                        
+                        <a href="#the-menu" class="awe-btn awe-btn-2 awe-btn-default text-uppercase">menu</a>
+                        <a href="/images/Speisekarte.pdf" class="awe-btn awe-btn-2 awe-btn-default text-uppercase" target="_blank">Menu PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-last">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <div class="image-wrap">
+                            <img src="/images/restaurant/terrace.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 col-md-pull-4">
+                        <h4 class="lg text-uppercase">{{ .Params.restaurant_heading2 }}</h4>
+                        <p>{{ .Params.restaurant_content2 }}</p>
+                       
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ABOUT STORY -->
+
+    <!-- MENU HIGHLIGHT -->
+    <section id="menu-divider" class="testimonial testimonial-1 section text-center">
+    <!-- BACKGROUND -->
+    <div class="awe-parallax bg-5"></div>
+    <!-- END / BACKGROUND -->
+
+    <!-- OVERLAY -->
+    <div class="awe-overlay"></div>
+    <!-- END / OVERLAY -->
+
+    <div class="container">
+        <div class="awe-title awe-title-1 wow fadeInUp" data-wow-delay=".3s">
+            <h3 class="lg text-uppercase">Menu</h3> 
+        </div>
+    </div>
+    </section>
+
+    <!-- THE MENU -->
+    <section id="the-menu" class="the-menu section">
+        <div class="tabs-menu tabs-page">
+            <div class="container">
+                <ul class="nav-tabs text-center" role="tablist">
+                    {{ range $idx, $menu := .Params.restaurant_menu }}
+                        <li {{ if eq $idx 0 }}class="active"{{ end }}><a href="#{{ $menu.id }}" role="tab" data-toggle="tab">{{ $menu.name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="container">
+                <div class="tab-menu-content tab-content">
+                    {{ range $idx, $menu := .Params.restaurant_menu }}
+                    <div class="tab-pane fade in {{ if eq $idx 0 }}active{{ end }}" id="{{ $menu.id }}">
+                        <div class="row">
+                            {{ if eq $menu.id "wine"}}
+                                {{ range $idx, $cat := .wine_categories }}    
+                                    <h3>{{ $cat.name }}</h3>
+
+                                    {{ range $cat.items }}
+                                        <div class="col-lg-12">
+                                            <div class="the-menu-item">
+                                                <!-- <div class="image-wrap">
+                                                    <img src="images/themenu/img-1.jpg" alt=""> 
+                                                </div>-->
+                                                <div class="the-menu-body">
+                                                    <h4 class="xsm">{{ .title}}</h4>
+                                                    
+                                                </div>
+                                                <div class="prices">
+                                                    {{ range .prices }}
+                                                    <span class="price xsm"><small>{{ .quantity }}cl</small> {{ .price }} / </span>
+                                                    {{ end}}
+                                                </div>
+
+                                                <p>{{ .description }} </p>
+                                            </div>
+                                        </div>
+                                        
+                                    {{ end }}
+                                {{ end }}
+                            {{ else }}
+                                {{ range $menu.items }}
+                                    <div class="col-lg-6">
+                                        <div class="the-menu-item">
+                                            <!-- <div class="image-wrap">
+                                                <img src="images/themenu/img-1.jpg" alt=""> 
+                                            </div>-->
+                                            <div class="the-menu-body">
+                                                <h4 class="xsm">{{ .title}}</h4>
+                                                
+                                            </div>
+                                            <div class="prices">
+                                                {{ if .price }}<span class="price xsm">CHF{{ .price }}</span>{{ end }}
+
+                                            </div>
+
+                                            <p>{{ .description }} </p>
+                                        </div>
+                                    </div>
+                                {{ end }}
+                            {{end}}
+                        </div>
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END / THE MENU -->
+
+{{ partial "footer.html" . }}
+

@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+
+<section id="gallery" class="section">
+  <div class="grid">
+    {{ range $index, $image := $.Site.Data.gallery }}
+      <div class = "grid-item">
+      <a href="#slide{{$index}}">
+        <img src={{$image}}>
+      </a>
+      </div>
+    {{ end }}
+
+  </div>
+
+
+</section>
+
+{{ partial "footer.html" . }}

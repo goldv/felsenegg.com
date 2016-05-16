@@ -1,0 +1,159 @@
+{{ partial "header.html" . }}
+
+    <!-- CONTACT US -->
+    <section id="contact" class="contact section">
+
+        <div class="contact-form contact-form-2">
+            <div class="divider divider-2"></div>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-8">
+                        <div class="tabs-wrap">
+                            <div class="tabs-page">
+                                <ul class="nav-tabs" role="tablist">
+                                    <li class="active"><a href="#public" role="tab" data-toggle="tab">{{ .Params.tab_public}}</a></li>
+                                    <li><a href="#car" role="tab" data-toggle="tab">{{ .Params.tab_car}}</a></li>
+                                    <li><a href="#foot" role="tab" data-toggle="tab">{{ .Params.tab_foot}}</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="public">
+                                    <p>
+                                    {{ .Params.public_content_p1 }}
+                                    </p>
+                                    <p>
+                                    {{ .Params.public_content_p2 }}
+                                    </p>
+                                     <p>
+                                        <a href="http://www.laf.ch" target="_blank">{{ .Params.car_content_cable_car }}</a> <br>
+                                        Zelgstrasse 80 <br>
+                                        8134 Adliswil 
+                                    </p>
+                                    <a href="http://fahrplan.sbb.ch/bin/query.exe/de" target="_blank">{{ .Params.travel_timetable }} SBB</a>
+                                    <br>
+                                    <a href="http://www.zvv.ch/" target="_blank">{{ .Params.travel_timetable }} ZVV</a>
+                                    
+                                </div>
+                            
+                                <div class="tab-pane fade in" id="car">
+                                    <p>
+                                    {{ .Params.car_content_p1 }} 
+                                    </p>
+
+                                    <p>
+                                        <a href="http://www.laf.ch" target="_blank">{{ .Params.car_content_cable_car }}</a> <br>
+                                        Zelgstrasse 80 <br>
+                                        8134 Adliswil <br>
+                                        +41 (0)44 710 73 30
+                                    </p>
+
+                                    <p>
+                                        {{ .Params.car_content_p2 }} 
+                                    </p>
+
+                                    <p>
+                                        {{ .Params.car_content_p3 }} 
+                                    </p>
+
+                                    <p>
+                                        <a href="https://www.google.ch/maps/place/Restaurant+Buchenegg/@47.296662,8.508153,17z/data=!3m1!4b1!4m2!3m1!1s0x479008720861a0df:0x9f66d6bf8f3b76f9" target="_blank">{{ .Params.car_content_parking_location}}</a>
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade in " id="foot">
+                                    <p>
+                                    {{ .Params.foot_content_p1 }}
+                                    </p>
+
+                                    <p>
+                                    {{ .Params.foot_content_p2 }}
+                                    <br>
+                                    <a href="http://www.laf.ch" target="_blank">{{ .Params.car_content_cable_car }}</a> <br>
+                                        Zelgstrasse 80 <br>
+                                        8134 Adliswil <br>
+                                        +41 (0)44 710 73 30
+                                    </p>
+
+                                   
+
+                                    <p>
+                                    {{ .Params.foot_content_p3 }}
+                                                                        <br>
+                                        <a href="https://www.google.ch/maps/place/Restaurant+Buchenegg/@47.296662,8.508153,17z/data=!3m1!4b1!4m2!3m1!1s0x479008720861a0df:0x9f66d6bf8f3b76f9" target="_blank">{{ .Params.car_content_parking_location}}</a>
+
+                                    </p>
+
+                                    
+                                    <p>
+                                    {{ .Params.foot_content_p4 }}
+                                    <br>
+                                     <a href="http://www.myswitzerland.com/en-ch/the-panorama-trail-from-ueetliberg-to-felsenegg.html" target="_blank">My Switzerland</a>
+                                    </p>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <address class="find-us">
+                            <span class="md">Find Us Here</span>
+                            <div class="location-1">
+                                <i class="icon awe_map_marker"></i>
+                                <strong>Restaurant Felsenegg<strong>
+                                Felsenegg 1 <br>
+                                8143 Stallikon/Zurich
+                            </div>
+                            
+                            <div class="phone">
+                                
+                                <a href="tel:+41447107755">+41 (0)44 710 77 55</a> <br>
+                                <a href="mailto:info@felsenegg.com">info@felsenegg.com</a>
+                    
+                            </div>
+                        </address>
+
+                        <div>{{ .Params.opening_times | markdownify }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-first">
+
+            <!-- OVERLAY -->
+            <div class="awe-overlay overlay-default"></div>
+            <!-- END / OVERLAY -->
+            
+            <div class="section-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="contact-body text-center">
+                                <h3 class="lg text-uppercase">CONTACT US</h3>
+                                <hr class="_hr">
+                                <address class="address-wrap">
+                                    <span class="address">Restaurant Felsenegg</span>
+                                    <span class="address">Felsenegg 1</span>
+                                    <span class="address">8143 Stallikon/Zurich</span>
+                                    <span class="phone">+41 (0)44 710 77 55</span>
+                                    <span class="phone" ><a style="color:white;" href="mailto:info@felsenegg.com">info@felsenegg.com</a></span>
+                                </address>
+                            </div>
+
+                            <div class="see-map text-center">
+                                <a href="#" data-see-contact="See contact info" data-see-map="See location on map" class="awe-btn awe-btn-5 awe-btn-default text-uppercase"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MAP -->
+            <div id="map" data-map-zoom="14" data-map-latlng="47.308917, 8.509369" data-snazzy-map-theme="grayscale" data-map-marker="/images/felsenegg-100.png" data-map-marker-size="100*100"></div>
+            <!-- END / MAP -->
+        </div>
+
+    </section>
+
+    <!-- END / CONTACT US -->
+{{ partial "footer.html" . }}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ens on Hugo Example Blog</title>
+    <link>/en/</link>
+    <description>Recent content in Ens on Hugo Example Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>banquet</title>
+      <link>/en/banquet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/banquet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contact</title>
+      <link>/en/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gallery</title>
+      <link>/en/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/gallery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>/en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>restaurant</title>
+      <link>/en/restaurant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/restaurant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>seminar</title>
+      <link>/en/seminar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/seminar/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

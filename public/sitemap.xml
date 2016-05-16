@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/de/banquet/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/banquet/</loc>
+  </url>
+  
+  <url>
+    <loc>/de/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>/de/gallery/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/gallery/</loc>
+  </url>
+  
+  <url>
+    <loc>/de/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/</loc>
+  </url>
+  
+  <url>
+    <loc>/de/restaurant/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/restaurant/</loc>
+  </url>
+  
+  <url>
+    <loc>/de/seminar/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/seminar/</loc>
+  </url>
+  
+</urlset>

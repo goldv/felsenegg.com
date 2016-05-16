@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]> <html class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="en"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/lib/magnific-popup.css"> 
+
+    <!-- AWE FONT -->
+    <link rel="stylesheet" type="text/css" href="/css/awe-fonts.css">
+
+    <!-- PAGE STYLE -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/felsenegg.css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+    <title>Felsenegg</title>
+</head>
+<body class="home">
+
+    <div id="fb-root"></div>
+   
+
+
+<!-- PAGE WRAP -->
+<div id="page-wrap">
+    
+    <!-- HEADER -->
+    <header id="header" class="header header-1">
+        <div class="container">
+            
+            <div class="logo"><a href="index.html"><img src="/images/felsenegg-100.png" alt="" style="opacity:0;"></a></div>
+            <!-- OPEN MENU MOBILE -->
+            <div class="open-menu-mobile">
+                <span>Toggle menu mobile</span>
+            </div>
+            <!-- END / OPEN MENU MOBILE -->
+
+            <!-- NAVIGATION -->
+            <nav class="navigation text-right" data-menu-type="1200">
+
+                <!-- NAV -->
+                <ul class="nav text-uppercase">
+                    <li><a href="/{{ .Params.lang }}">{{ if eq "en" .Params.lang }}Home{{ else }}Startseite{{ end }}</a></li>
+                    <li><a href="/{{ .Params.lang }}/restaurant">{{ if eq "en" .Params.lang }}Restaurant{{ else}}Restaurant{{ end}}</a></li>
+                    <li><a href="/{{ .Params.lang }}/banquet">{{ if eq "en" .Params.lang }}Groups{{ else }}Gruppen{{ end }}</a></li>
+                    <li><a href="/{{ .Params.lang }}/seminar">{{ if eq "en" .Params.lang }}Seminar{{ else }}Seminare{{ end }}</a></li>
+                    <li><a href="/{{ .Params.lang }}/gallery">{{ if eq "en" .Params.lang }}Gallery{{ else }}Gallery{{ end }}</a></li>
+                    <li><a href="/{{ .Params.lang }}/contact">{{ if eq "en" .Params.lang }}Contact{{ else }}Kontakt{{ end }}</a></li>
+                </ul>
+                <!-- END / NAV -->
+                               
+                <!-- SOCIAL -->
+                <div class="head-social">
+                    <a href="/{{ if eq "en" .Params.lang }}de{{ else }}en{{ end }}{{ if ne .LinkTitle "index" }}/{{ .LinkTitle }}{{end}}" class="navbar-link">
+                        {{ if eq "en" .Params.lang }}
+                            de
+                        {{ else }}
+                            en
+                        {{ end }}
+                    </a>
+                    <a class="web-cams" href="#"><i class="fa fa-camera"></i></a>
+                    <a href="mailto:info@felsenegg.com"><i class="fa fa-envelope"></i></a>
+                    <a href="tel:+41447107755"><i class="fa fa-phone"></i></a>
+                    <a href="http://www.facebook.com/felsenegg" target="_blank"><i class="fa fa-facebook"></i></a>
+                </div>
+                <!-- END / SOCIAL -->
+            </nav>
+            <!-- END / NAVIGATION -->
+        </div>
+
+    </header>
+    <!-- END / HEADER -->

@@ -1,0 +1,24 @@
+.grid-item {
+  width: 400px;
+  padding : 2px;
+}
+
+@media (min-width: 992px)  {
+  .grid{
+    margin : 50px;
+  }
+}
+
+
+.white-popup-block {
+  background: #FFF;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.red{
+  color : red;
+}

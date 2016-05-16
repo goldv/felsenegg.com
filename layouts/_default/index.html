@@ -1,0 +1,185 @@
+{{ partial "header.html" . }}
+
+
+<!-- HOME MEDIA -->
+<section id="home-media" class="home-media section">
+    <div class="home-fullscreen tb">
+        <div class="awe-parallax bg-1"></div>
+
+        
+        <div class="tb-cell text-center">
+            <div class="home-content">
+                <img src = "/images/felsenegg.png"/>
+                <br>
+                <a href="#" class="awe-btn awe-btn-1 awe-btn-default text-uppercase web-cams">WEB CAM</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END / HOME MEDIA -->
+
+<!-- GOOD FOOD -->
+<section id="good-food" class="good-food section pd">
+<div class="container">
+    <div class="good-food-heading text-center">
+        <div class="good-food-title style-2">
+            <h6 class="xmd text-uppercase">{{ .Params.intro_heading }}</h6>
+        </div>
+        <p>{{ $.Params.intro_content }} </p>
+        <a href="/{{ .Params.lang }}/restaurant" class="awe-btn awe-btn-2 awe-btn-default text-uppercase">To the Restaurant</a>
+    </div>
+</div>
+
+<div class="divider divider-2"></div>
+</section>
+<!-- END / GOOD FOOD -->
+
+<!-- TESTIMONIAL -->
+<section id="testimonial" class="testimonial testimonial-1 section">
+<!-- BACKGROUND -->
+<div class="awe-parallax bg-2"></div>
+<!-- END / BACKGROUND -->
+
+<!-- OVERLAY -->
+<div class="awe-overlay"></div>
+<!-- END / OVERLAY -->
+
+<div class="container">
+    <div class="testimonial-content">
+        
+        <blockquote>
+            <p>Zurich's only cable car restaurant</p>
+            
+        </blockquote>
+    
+    </div>
+</div>
+</section>
+<!-- END / TESTIMONIAL -->
+
+<!-- FASTFOOD -->
+<section id="fastfood" class="fastfood section pd70">
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="fastfood-description">
+                <div class="content-heading mt">
+                    <h4 class="lg text-uppercase">{{ .Params.fondue_package_heading }}</h4>
+                    <hr class="_hr">
+                </div>
+                <div class="text-wrap">
+                    <p>{{ .Params.fondue_package_content }}</p>
+                </div>
+                <a href="/{{ .Params.lang }}/banquet" class="awe-btn awe-btn-2 awe-btn-ar text-uppercase">See the packages</a>
+            </div>  
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+            <div class="fastfood-items">
+                <div class="row">
+                    <!-- FASTFOOD ITEM -->
+                    <div class="col-xs-6">
+                        <div class="fastfood-item">
+                            <img src= "/images/fondue-package/fondue.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- END / FASTFOOD ITEM -->
+
+                    <!-- FASTFOOD ITEM -->
+                    <div class="col-xs-6">
+                        <div class="fastfood-item">
+                            <img src="/images/fondue-package/felsenegg-cable-car.jpg"  alt="">
+                        </div>
+                    </div>
+                    <!-- END / FASTFOOD ITEM -->
+
+                    <!-- FASTFOOD ITEM -->
+                    <div class="col-xs-6">
+                        <div class="fastfood-item">
+                            <img src="/images/fondue-package/meat-fondue.jpg"  alt="">
+                        </div>
+                    </div>
+                    <!-- END / FASTFOOD ITEM -->
+
+                    <!-- FASTFOOD ITEM -->
+                    <div class="col-xs-6">
+                        <div class="fastfood-item">
+                            <img src="/images/fondue-package/seilbahn.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- END / FASTFOOD ITEM -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="divider divider-2"></div>
+</section>
+<!-- END / FASTFOOD -->
+
+<!-- SECTION HIGHLIGHT -->
+<section id="seminar-divider" class="testimonial testimonial-1 section text-center">
+<!-- BACKGROUND -->
+<div class="awe-parallax bg-3"></div>
+<!-- END / BACKGROUND -->
+
+<!-- OVERLAY -->
+<div class="awe-overlay"></div>
+<!-- END / OVERLAY -->
+
+<div class="container">
+    <div class="awe-title awe-title-1 wow fadeInUp" data-wow-delay=".3s">
+        <h3 class="lg text-uppercase">Seminars</h3> 
+    </div>
+</div>
+</section>
+
+<section id="seminar" class="fastfood section pd70">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+            <div class="fastfood-items">
+                <div class="row">
+                    <!-- FASTFOOD ITEM -->
+                    <div class="col-xs-6">
+                        <div class="fastfood-item">
+                            <img src= "/images/seminar/seminar1.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- END / FASTFOOD ITEM -->
+
+                    <!-- FASTFOOD ITEM -->
+                    <div class="col-xs-6">
+                        <div class="fastfood-item">
+                            <img src="/images/seminar/seminar2.jpg"  alt="">
+                        </div>
+                    </div>
+                    <!-- END / FASTFOOD ITEM -->
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="fastfood-description">
+                <div class="content-heading mt">
+                    <h4 class="lg text-uppercase">{{ .Params.seminar_heading }}</h4>
+                    <hr class="_hr">
+                </div>
+
+
+                <div class="text-wrap">
+                    <p>{{ .Params.seminar_content }}</p>
+                </div>
+                <a href="/{{ .Params.lang }}/seminar" class="awe-btn awe-btn-2 awe-btn-ar text-uppercase">{{ .Params.seminar_button }}</a>
+            </div>  
+        </div>
+    </div>
+</div>
+</section>
+<!-- END / SECTION HIGHLIGHT -->
+
+
+</section>
+
+    <!-- END / CONTACT US -->
+{{ partial "footer.html" . }}
