@@ -37,6 +37,13 @@ foot_content_p4= "Der wohl am häufigst begangene Wanderweg in der Umgebung von 
 opening_times = """
 #### Öffnungszeiten
 
+##### Züri Fäscht
+
+Freitag und Samstag 
+
+Restaurant und Luftseilbahn
+offen bis 1:05 Uhr
+
 ##### Sommer (Mai - Oktober)
 Montag - Samstag  11:00 - 22:00  
 Sonntag	10:00 - 20:00  

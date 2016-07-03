@@ -36,7 +36,14 @@ foot_content_p4= "The last option is the hike from Uetliberg to Felsenegg, Europ
 
 opening_times = """
 
-#### Opening Times
+#### Opening Hours
+
+##### Züri Fäscht
+
+Fiday and Saturday 
+
+Restaurant und cable car
+open until 1:05 am
 
 ##### Summer (May - October)
 Monday - Saturday  11:00am - 10:00pm  
