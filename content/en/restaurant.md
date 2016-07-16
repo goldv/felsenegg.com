@@ -13,6 +13,12 @@ restaurant_content2 = "170 places are awaiting you. By day, from our terrace on 
 new_year_heading = "Happy New Years!"
 new_year = "Book in advance to spend your new year at Felsenegg! Enjoy a sumptuous New Year's Eve dinner and marvel at the spectacular firework display over Zurich."
 
+first_august_heading = "SWISS NATIONAL DAY"
+  first_august = """
+ Enjoy a sumptuous Swiss dinner and marvel at the spectacular firework display over Zurich.
+ Cable car [www.laf.ch](http://www.laf.ch) runs every 15 minutes till 01:00.
+  """
+
 [[restaurant_menu]]
 id = "starter"
 name = "Starters"

@@ -13,6 +13,12 @@ restaurant_content2 =  "150 Plätze warten auf Sie. Ein Ort der begeistert. Auch
 new_year_heading = "Frohes neues Jahr!"
 new_year = "Wir freuen uns schon auf den Jahreswechsel auf der Felsenegg! Geniessen Sie ein exklusives Silvester-Dinner und bewundern Sie das grosse Feuerwerk von Zürich."
 
+first_august_heading = "SWISS NATIONAL DAY"
+  first_august = """
+ Feiern & Staunen: der 1. August auf der Felsenegg ist ein beeindruckendes Erlebnis.
+ Die Luftseilbahn [www.laf.ch](http://www.laf.ch) fährt alle 15 Minuten bis 01:05 Uhr.
+  """
+
 [[restaurant_menu]]
 id = "starter"
 name = "Vorspeise"
