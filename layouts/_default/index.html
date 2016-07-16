@@ -21,13 +21,21 @@
 <!-- GOOD FOOD -->
 <section id="good-food" class="good-food section pd">
 <div class="container">
-    <div class="good-food-heading text-center">
-        <div class="good-food-title style-2">
-            <h6 class="xmd text-uppercase">{{ .Params.intro_heading }}</h6>
+    <div class="row" style="position : relative">
+        <div class="col-md-6">
+            <div class="good-food-heading text-center">
+                <div class="good-food-title style-2">
+                    <h6 class="xmd text-uppercase">{{ .Params.intro_heading }}</h6>
+                </div>
+                <p>{{ $.Params.intro_content }} </p>
+
+                <a href="/{{ .Params.lang }}/restaurant" class="awe-btn awe-btn-2 awe-btn-default text-uppercase">To the Restaurant</a>
+            </div>
         </div>
-        <p>{{ $.Params.intro_content }} </p>
-        <a href="/{{ .Params.lang }}/restaurant" class="awe-btn awe-btn-2 awe-btn-default text-uppercase">To the Restaurant</a>
-    </div>
+        <div class="col-md-6" style="height : 100%">
+            <div id="c3288"></div>
+            <script type="text/javascript"> roundshot.animate({ picture: "http://backend.roundshot.com/cams/467/thumbnail", link: "http://felsenegg.roundshot.com/", angle: 180, width: '100%', height: 300, bounce: false, open_in_new_tab: true }); </script>
+        </div>
 </div>
 
 <div class="divider divider-2"></div>
