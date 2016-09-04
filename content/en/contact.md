@@ -38,13 +38,6 @@ opening_times = """
 
 #### Opening Hours
 
-##### Züri Fäscht
-
-Fiday and Saturday 
-
-Restaurant und cable car
-open until 1:05 am
-
 ##### Summer (May - October)
 Monday - Saturday  11:00am - 10:00pm  
 Sunday 10:00 am - 8:00 pm    
